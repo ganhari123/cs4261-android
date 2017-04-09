@@ -1,5 +1,6 @@
 package com.herokuapp.shopandgo.shopandgo;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -22,10 +23,14 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 EditText username = (EditText) findViewById(R.id.user_name);
+                EditText password = (EditText) findViewById(R.id.password);
                 AsyncHttpClient client = new AsyncHttpClient();
                 String user = username.getText().toString();
-                client.setBasicAuth(user,"password/token");
-                client.get("http://shopandgo.herokuapp.com/android/username/" + username.getText(), new AsyncHttpResponseHandler() {
+                String pass = password.getText().toString();
+                RequestParams params = new RequestParams();
+                params.put("username", user);
+                params.put("password", pass);
+                client.get("http://shopandgo.herokuapp.com/android/login", params, new AsyncHttpResponseHandler() {
 
                     @Override
                     public void onStart() {
@@ -34,7 +39,12 @@ public class Login extends AppCompatActivity {
 
                     @Override
                     public void onSuccess(int i, Header[] headers, byte[] bytes) {
-                        Log.e("GOT USERNAME", "GOT USERNAME");
+                        String response = new String(bytes);
+                        Log.e("SD", response);
+                        if (response.equals("login successful")) {
+                            Intent intent = new Intent(Login.this, Dashboard.class);
+                            startActivity(intent);
+                        }
                     }
 
                     @Override
