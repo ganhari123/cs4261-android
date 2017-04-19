@@ -9,12 +9,25 @@
     android:fitsSystemWindows="true"
     tools:context="com.herokuapp.shopandgo.shopandgo.Dashboard">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="0.05"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:elevation="5dp"/>
+
     <android.support.design.widget.TabLayout
         android:id="@+id/sliding_tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#b62020"
+        android:background="#7d7b81"
         android:layout_weight="0.05"
+        app:tabTextColor="#FFFFFF"
+        app:tabIndicatorColor="#FFE4DE"
+        app:tabSelectedTextColor="#dfb8c2"
         app:tabMode="fixed" />
 
     <android.support.v4.view.ViewPager

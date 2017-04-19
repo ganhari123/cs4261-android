@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "460209567460",
+    "firebase_url": "https://shopandgo-1478981969236.firebaseio.com",
+    "project_id": "shopandgo-1478981969236",
+    "storage_bucket": "shopandgo-1478981969236.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460209567460:android:32172837781de235",
+        "android_client_info": {
+          "package_name": "com.herokuapp.shopandgo.shopandgo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460209567460-n2ejb6qrjndjgt36io43ma9i0irn96sg.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "460209567460-bvhh00v3ftpsekpoo25gesic7ce3t5f6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8Tk6GfnxY7JNo16G8RMkPFPbn6ZorJr4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

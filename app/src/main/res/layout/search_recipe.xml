@@ -1,25 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#FFE4DE">
 
     <TextView
         android:id="@+id/section_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="Search your Recipe"
+        android:layout_weight="0.05"
+        android:textAlignment="center"
+        android:textSize="20dp" />
 
-    <EditText
-        android:id="@+id/recipe_name"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:layout_height="0dp"
+        android:layout_weight="0.20"
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/search"
+        <EditText
+            android:id="@+id/recipe_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Search for Item" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:text="Search"
+            android:background="#a99da4"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/recipe_search_results"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"
+        />
 </LinearLayout>
