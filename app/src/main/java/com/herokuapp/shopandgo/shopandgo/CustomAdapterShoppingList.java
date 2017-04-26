@@ -62,7 +62,10 @@ public class CustomAdapterShoppingList extends ArrayAdapter<ShoppingCartItem> {
         } else {
             img.setVisibility(View.INVISIBLE);
         }
-
+        TextView item_quant = (TextView) rowView.findViewById(R.id.item_quantity);
+        item_quant.setText(String.valueOf(objects[position].getQuantity()));
+        TextView item_unit = (TextView) rowView.findViewById(R.id.item_unit);
+        item_unit.setText(String.valueOf(objects[position].getUnit()));
         return rowView;
     }
 

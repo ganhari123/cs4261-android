@@ -33,8 +33,10 @@
             android:label="@string/title_activity_profile"
             android:theme="@style/FullscreenTheme" />
         <activity android:name=".RecipeViewPage" />
-        <activity android:name=".ShoppingCart"
-            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name=".ShoppingCart"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".SuperMarketItemSearch"></activity>
     </application>
 
 </manifest>

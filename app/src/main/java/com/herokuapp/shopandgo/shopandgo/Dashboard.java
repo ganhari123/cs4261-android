@@ -204,6 +204,10 @@ public class Dashboard extends AppCompatActivity {
             // Return a PlaceholderFragment (defined as a static inner class below).
             if (position == 0) {
                 return SearchRecipe.newInstance(0);
+            }  else if (position == 1) {
+                return AisleFinderFragment.newInstance(0);
+            } else if (position == 2) {
+                return NutritionFragment.newInstance(0);
             }
             return PlaceholderFragment.newInstance(position + 1);
         }

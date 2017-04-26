@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:weightSum="1"
+    android:background="#FFE4DE">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Aisle Finder"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_weight="0.1"
+        android:hint="Search for Store by City, State or Zipcode"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="0.1">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/zipcode_query"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:hint="zipcode"
+            android:layout_weight="0.4"/>
+
+        <Spinner
+            android:id="@+id/fifty_states"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Search"
+            android:id="@+id/find_supermarkets"
+            android:layout_weight="0.2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#a99da4"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"
+        android:id="@+id/super_market_list"
+        android:layout_weight="0.8"/>
+
+</LinearLayout>

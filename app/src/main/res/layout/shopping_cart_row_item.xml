@@ -7,14 +7,32 @@
 
     <CheckBox
         android:id="@+id/item_name"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="0.8"
+        android:layout_weight="0.4"
         android:text="CheckBox" />
+    <TextView
+        android:id="@+id/item_quantity"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:text="CheckBox"
+        >
+        </TextView>
+    <TextView
+        android:id="@+id/item_unit"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:text="CheckBox"
+        >
+    </TextView>
 
     <ImageView
         android:id="@+id/checked"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="0.2"
         app:srcCompat="@drawable/common_google_signin_btn_icon_dark_disabled" />

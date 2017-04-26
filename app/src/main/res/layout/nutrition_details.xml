@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE4DE">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Nutritional Information"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_weight="0.1"
+        android:id="@+id/textView3" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/search_nutrition_item"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.8"
+            android:hint="Search by Item"/>
+
+        <Button
+            android:id="@+id/nutrition_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="Search"
+            android:background="#a99da4"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/nutrition_list"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"
+        android:layout_weight="0.8"/>
+</LinearLayout>
